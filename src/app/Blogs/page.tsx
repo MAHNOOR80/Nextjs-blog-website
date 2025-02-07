@@ -73,14 +73,7 @@ async function Page() {
           </div>
         ))}
       </div>
-      {/* View All Button */}
-      <div className="flex justify-center mt-12">
-        <Link href="/Blogs">
-          <button className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-[#da7509] to-[#b66b08] rounded-full shadow-xl hover:from-[#b66b08] hover:to-[#da7509] transition-all duration-300 transform hover:scale-110">
-            View All
-          </button>
-        </Link>
-      </div>
+     
     </div>
   );
 }

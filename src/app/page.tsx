@@ -39,7 +39,7 @@ async function Page() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 bg-black min-h-screen">
       <Header />
-      <h1 className="text-5xl font-extrabold text-center mb-12 text-white">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-center mb-12 text-white">
         Latest Blog Posts
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -56,11 +56,11 @@ async function Page() {
               className="w-full h-60 object-cover"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-bold text-white mb-3 truncate">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3 truncate">
                 {blog.title}
               </h2>
 
-              <p className="text-xs text-gray-400 font-medium">
+              <p className="text-xs sm:text-sm md:text-base text-gray-400 font-medium">
                 <span className="font-semibold">Published:</span> {blog.Publisheddate}
               </p>
               {/* Read More Button */}
@@ -76,7 +76,7 @@ async function Page() {
       {/* View All Button */}
       <div className="flex justify-center mt-12">
         <Link href="/Blogs">
-          <button className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-[#da7509] to-[#b66b08] rounded-full shadow-xl hover:from-[#b66b08] hover:to-[#da7509] transition-all duration-300 transform hover:scale-110">
+          <button className="px-8 py-3 text-lg sm:text-xl md:text-2xl font-semibold text-white bg-gradient-to-r from-[#da7509] to-[#b66b08] rounded-full shadow-xl hover:from-[#b66b08] hover:to-[#da7509] transition-all duration-300 transform hover:scale-110">
             View All
           </button>
         </Link>
